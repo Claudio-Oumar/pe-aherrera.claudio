@@ -8,7 +8,11 @@ public class App {
     private static final String cpNOMBRE = "CLAUDIO PEÑAHERRERA";
     private static final String cpCORREO = "claudio.penaherrera@epn.edu.ec";
     private static final String cpusuario = "profe";
-
+    /**
+     * Descripcion: Me imprime entrar la APP
+     * @param args
+     * @throws Exception
+     */
     public static void main(String[] args) throws Exception {
         System.out.println("------------------------------------------");
         cppresentarDatos();
@@ -19,7 +23,9 @@ public class App {
 
     }
    
-
+    /**
+     * Descripcion: Ingresar el usario y contraseña
+     */
     private static void pplong() {
         int cpintentosRestantes = 3;
         while (cpintentosRestantes > 0) {
@@ -45,14 +51,19 @@ public class App {
                     break;
                 }
             }
-            System.exit(0);
         }
+        System.exit(0);
 
     }
 
     private static void cpclear() {
     }
-
+    /**
+     * Descripcion: Validar las credenciales
+     * @param cpusuario
+     * @param cpclave
+     * @return
+     */
     private static boolean cpvalidarCredenciales(String cpusuario, String cpclave) {
         String cpUsuario2 = "profe";
         String cpClave2 = "1234";
@@ -65,11 +76,14 @@ public class App {
         return false;
     }
     
-
+    /**
+     * Descripcion imprime credenciales
+     * @param cpCEDULA
+     */
     private static void cppresentarDatos() {
-        System.out.println("-CEDULA: " + cpCEDULA);
-        System.out.println("-CORREO: " + cpCORREO);
-        System.out.println("-NOMBRE: " + cpNOMBRE);
+        System.out.println(CPColor.cpBACKGROUND_BLACK+"-CEDULA: " + cpCEDULA);
+        System.out.println(CPColor.cpBACKGROUND_BLACK+"-CORREO: " + cpCORREO);
+        System.out.println(CPColor.cpBACKGROUND_BLACK+"-NOMBRE: " + cpNOMBRE);
 
     }
 

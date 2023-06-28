@@ -32,7 +32,7 @@ public class CPMenu {
 
             switch (cpopcion) {
                 case "1":
-                System.out.println("[+] Listado de Profesor");
+                System.out.println(CPColor.cpBACKGROUND_BLUE+"[+] Listado de Profesor");
                     File micarpeta= new File("SRC\\Horario");
                             File[] listaFicheros=micarpeta.listFiles();
                             for (File file : listaFicheros) {
@@ -41,7 +41,7 @@ public class CPMenu {
                             }
                     break;
                 case "2":
-                    System.out.println("[+] Listado de Profesor");
+                    System.out.println(CPColor.cpBACKGROUND_BLUE+"[+] Listado de Profesor");
                     System.out.print("\u001B[34m");
                     System.out.println(
                             "\n\t-ICCD323-GRLSW        SISTEMAS OPERATIVOS SISTEMAS OPERATIVOS\n\t-ICCD343-GR1SW        CONTACTO CON LA MUSICA\n\t-ICCD343-GR1SW        ARQUITECTURA DE COMPUTADORES\n\t-MATD223-GR4SW        PROBABILIDAD Y ESTADISTiCABASICAS\n\t-CSHD3BL-A3           FUNDAMENTOS DE REDES Y CONECTIVIDAD\n\t-ICCD353-GR1SW        FUNDAMENTOS DE REDES Y CONECTIVIDAD");

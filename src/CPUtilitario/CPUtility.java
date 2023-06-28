@@ -6,6 +6,11 @@ public class CPUtility {
     private static final int cpdelay = 100; 
    public static  Scanner sc = new Scanner(System.in);
 
+   /**
+    * Descripcion: me ayuda a controlar en la App
+    * @param mensage
+    * @return
+    */
     public  static int cpGetcpNumeroPositivo(String mensage) {
         int cpnumero;
 
